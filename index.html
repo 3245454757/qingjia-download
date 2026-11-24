@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>请假系统 · 安卓版 App 下载</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 20px calc(28px + env(safe-area-inset-bottom));
+            padding-top: calc(28px + env(safe-area-inset-top));
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container { width: 100%; max-width: 414px; }
+
+        /* 顶部标题 */
+        .head { text-align: center; margin-bottom: 20px; }
+
+        .head-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3138;
+            letter-spacing: .5px;
+        }
+
+        .head-sub {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #909399;
+            letter-spacing: .2px;
+        }
+
+        /* 白卡 */
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
+            padding: 26px 22px 22px;
+            text-align: center;
+        }
+
+        /* 纯 CSS App 图标位 */
+        .app-icon {
+            width: 84px;
+            height: 84px;
+            margin: 0 auto 18px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #6faaf8, #5a9cf5 55%, #4a8ae0);
+            box-shadow: 0 6px 16px rgba(90, 156, 245, .35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1;
+            text-indent: 2px;
+            user-select: none;
+        }
+
+        /* 下载按钮 */
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            background: #5a9cf5;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 14px rgba(90, 156, 245, .3);
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .download-btn:active { background: #4a8ae0; }
+
+        .version-line {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #a0a4ab;
+        }
+
+        /* 说明区 */
+        .notes {
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid #eef0f3;
+            text-align: left;
+        }
+
+        .note {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .note:last-child { margin-bottom: 0; }
+
+        .note-index {
+            flex: none;
+            width: 18px;
+            height: 18px;
+            margin-top: 1px;
+            border-radius: 50%;
+            background: #eaf2fe;
+            color: #5a9cf5;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .note-text {
+            font-size: 12.5px;
+            color: #606266;
+            line-height: 1.7;
+            word-break: break-word;
+        }
+
+        /* 底部极小灰字 */
+        .foot {
+            margin-top: 18px;
+            font-size: 10px;
+            color: #c0c4cc;
+            text-align: center;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="head">
+        <div class="head-title">请假系统</div>
+        <div class="head-sub">安卓版 App</div>
+    </div>
+
+    <div class="card">
+        <div class="app-icon">请假</div>
+
+        <a class="download-btn" href="./qingjia.apk" download>下载安装包</a>
+        <div class="version-line">版本 v1.0 ｜ 约几十 KB</div>
+
+        <div class="notes">
+            <div class="note">
+                <span class="note-index">1</span>
+                <span class="note-text">在企业微信里打开本页时，请点右上角 ⋯ → 在浏览器中打开，否则无法下载</span>
+            </div>
+            <div class="note">
+                <span class="note-index">2</span>
+                <span class="note-text">下载完成后点安装，如提示「不允许安装未知来源应用」，去手机设置里允许本浏览器安装即可</span>
+            </div>
+            <div class="note">
+                <span class="note-index">3</span>
+                <span class="note-text">iOS 用户不需要安装，请直接在微信企业号的网页版里使用</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">如遇问题请联系管理员</div>
+
+</div>
+
+</body>
+</html>
